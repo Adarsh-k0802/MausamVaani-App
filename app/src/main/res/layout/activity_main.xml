@@ -121,9 +121,9 @@
             android:layout_above="@id/idRVWeather"
             android:layout_margin="8dp"
             android:layout_marginBottom="10dp"
-            android:textStyle="bold"
             android:text="Today's Weather Forcast"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

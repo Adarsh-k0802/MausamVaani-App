@@ -113,11 +113,12 @@ public class MainActivity extends AppCompatActivity {
             if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED){
                 Toast.makeText(this,"Permission Granted..", Toast.LENGTH_SHORT).show();
             }else{Toast.makeText(this,"Please provide the permission",Toast.LENGTH_SHORT).show();
-            finish();}
+            finish();
+            }
         }
     }
 
-    private String getCityName(double latitude,double longitude){
+    private String getCityName(double longitude,double latitude){
             String cityName = "Not Found";
             Geocoder gcd = new Geocoder(getBaseContext(), Locale.getDefault());
 
